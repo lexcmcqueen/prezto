@@ -113,7 +113,41 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+#zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'powerlevel9k'
+
+
+
+#
+# powerlevel9k Configuration
+#
+
+# using nerdfont patched Iosevka font
+POWERLEVEL9K_MODE='nerdfont-complete'
+
+# segments
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs time)
+
+# status segment
+POWERLEVEL9K_STATUS_OK=false
+
+# dir segment
+POWERLEVEL9K_HOME_ICON=''
+POWERLEVEL9K_HOME_FOLDER_ABBREVIATION="\uF015 "
+POWERLEVEL9K_HOME_SUB_ICON=''
+POWERLEVEL9K_FOLDER_ICON=''
+POWERLEVEL9K_ETC_ICON=''
+POWERLEVEL9K_SHORTEN_DIR_LENGTH=3
+POWERLEVEL9K_SHORTEN_DELIMITER="\u2425"
+POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
+
+# os segment
+POWERLEVEL9K_APPLE_ICON='\uF179 '
+
+
+
+
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
